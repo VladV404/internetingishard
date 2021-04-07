@@ -3,7 +3,11 @@
   font-style: italic;
 }
 
-.button {
+.button:link,
+.button:visited {
+  display: block;
+  text-decoration: none;
+
   color: #FFF;
   background-color: #5995DA;
   font-weight: bold;
@@ -16,20 +20,37 @@
   margin: 20px auto;
 }
 
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;
+}
+
 .page {
   width: 600px;
   margin: 0 auto;
 }
 
-.call-to-action {
+.call-to-action:link,
+.call-to-action:visited:hover {
   font-style: italic;
-  background-color: #EEB75A
+  background-color: #eeb75a;
 }
-
-.synopsis em {
-  font-style: normal;
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  font-style: italic;
+  background-color: #f5cf8e;
+}.call-to-action:active,
+.call-to-action:visited:active {
+  font-style: italic;
+  background-color: #eeb75a;
 }
-
 a:link {
   color: blue;
   text-decoration: none;
@@ -43,4 +64,13 @@ a:hover {
 }
 a:active {
   color: red;
+}
+a:visited:hover {
+  color: orange;
+}
+a:visited:active {
+  color: red;
+}
+#button-2 {
+  color: #5d6063
 }
